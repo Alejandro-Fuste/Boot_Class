@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+
+header {
+	background-image: url("tool_backgroundPic2.jpg"); /* The image used */
+	background-color: #cccccc; /* Used if the image is unavailable */
+	height: 300px; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Does not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	width: 100%;
+	border-radius: 5px;
+}
+
+.container::before,
+.container::after {
+	content: "";
+	display: table;
+}
+
+.container::after {
+	clear: both;
+}
+
+.container {
+	clear: both;
+	*zoom: 1;
+	width: auto;
+}
+
+section {
+	width: 65%;
+	margin: 10px 1.5%;
+	float: left;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Domine', serif;
+	font-size: 30px;
+}
+
+h2 {
+	font-family: 'Fira Sans', sans-serif;
+	margin-bottom: 10px;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 150%;
+}
+aside {
+	width: 25%;
+	margin: 10px 1.5%;
+	float: left;
+}
+
+th {
+	font-family: 'Fira Sans', sans-serif;
+}
+
+td {
+	font-family: 'Roboto', sans-serif;
+}
+
+.float-img {
+	float: left;
+	margin: 5px 10px 5px 0px;
+	border: solid black 1px;
+	padding: 2px;
+}
+
+footer {
+	height: 300px;
+	width: 100%;
+	margin: 15px auto 15px auto;
+}
+
+.list-box {
+	float: left;
+	margin: 5px 10px 5px 10px;
+}
+
+ol,
+li {
+	font-family: 'Roboto', sans-serif;
+}
+
+.video-box {
+	float: left;
+	margin: 5px 10px 5px 5px;
+}
