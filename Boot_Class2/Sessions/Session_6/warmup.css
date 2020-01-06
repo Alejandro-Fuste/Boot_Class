@@ -1,0 +1,172 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	/* min-height: 100%; */
+	/* display: grid; */
+	background-color: #f4f4f4;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+}
+
+header,
+footer {
+	background-color: #ef853b;
+	padding: 20px;
+	width: 100%;
+	height: 50px;
+}
+
+header,
+a,
+h1,
+p {
+	/* color: #666666; */
+	color: #393e46;
+}
+
+header {
+	grid-column-start: 0;
+	grid-column-end: 2;
+	grid-row-start: 0;
+	grid-row-end: 1;
+	display: flex;
+	height: 100%;
+	font-family: 'Oswald', sans-serif;
+	position: relative;
+	padding: 20px;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 5px solid #393e46;
+}
+
+.aboutMe_container,
+.contact_container,
+.portfolio_container {
+	background-color: #ffffff;
+	margin: 50px auto;
+	grid-column-start: 0;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	padding: 20px;
+	height: auto;
+}
+
+footer {
+	grid-column-start: 0;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	padding: 60px;
+	border-top: 5px solid #393e46;
+}
+
+.aboutMe_container {
+	width: 960px;
+}
+
+.contact_container,
+.portfolio_container {
+	width: 800px;
+}
+
+.portfolio_container {
+	height: 600px;
+}
+
+header h1 {
+	display: flex;
+	font-size: 60px;
+	width: auto;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+	width: auto;
+}
+.nav_links {
+	width: auto;
+	display: flex;
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.nav_links,
+li {
+	display: inline-block;
+	width: auto;
+	padding: 0px 20px;
+}
+
+li a {
+	padding: 8px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+section h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 32px;
+	padding: 0 0 25px 0;
+	border-bottom: 2px solid #aeb1b6;
+}
+section form {
+	margin-top: 20px;
+	font-family: 'Lato', sans-serif;
+	color: #393e46;
+}
+
+section picture img {
+	margin-top: 20px;
+	padding-right: 20px;
+}
+
+section input,
+section textarea {
+	width: 100%;
+	margin: 10px 0;
+	padding: 5px;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	color: #393e46;
+}
+
+button {
+	background-color: #ef853b;
+	padding: 10px 50px;
+	font-size: 16px;
+	font-family: 'Oswald', sans-serif;
+	color: #393e46;
+}
+
+.aboutMe_pic,
+p {
+	margin-top: 20px;
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.6;
+	font-family: 'Lato', sans-serif;
+}
+
+.aboutMe_pic {
+	float: left;
+	margin: 0 15px 15px 0;
+}
