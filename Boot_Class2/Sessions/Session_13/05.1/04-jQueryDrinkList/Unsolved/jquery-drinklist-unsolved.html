@@ -11,6 +11,8 @@
 
   <div id="drink-options"></div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   <script type="text/javascript">
 
     var drinkList = [
@@ -27,6 +29,18 @@
 
     // Using JavaScript programmatically append each drinkList item to the "drink-options" div
     // HINT: you will need a for loop to go over each element in the list
+
+    var $drinkEl = $('#drink-options');
+
+    drinkList.forEach(addDrink);
+
+    function addDrink(item, index){
+      $newDrink = $("<p>" + item + "</p>");
+      $drinkEl.append($newDrink);
+      // console.log('drink');
+
+    }
+    
 
 
   </script>

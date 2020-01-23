@@ -31,12 +31,35 @@
   <h1 class="text-center" id="random-number"></h1>
 
   <script type="text/javascript">
-
+  
     $(document).ready(function() {
+
+      var $ranButton = $('#random-button');
+      var $ranNumDiv = $('#random-number');
+      // console.log($ranNumDiv);
+
 
       // CREATE THE MISSING CODE HERE. Your code should add content to the random-number div.
       // ...
+      
 
+      $('#random-button').on('click', function(){
+        var lottoNum = "";
+        for (i=0; i < 10; i++) {
+          var random = Math.floor(Math.random()*9);
+          lottoNum += random;
+        }
+        
+        $('#random-number').prepend("<br><hr>" + lottoNum);
+        
+        // console.log('click');
+        // 
+        // for (i=0; i < 10; i++) {
+        //   $('random-number').append(rand);
+        // }
+
+       
+      });
 
       // ...
 

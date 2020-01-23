@@ -10,4 +10,6 @@
 
 * **HINT:** Don’t forget to “incorporate” jQuery before you begin.
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 * **BONUS:** Instead of using a `for` loop, try searching about the use of the jQuery `.each` method.
