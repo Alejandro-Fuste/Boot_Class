@@ -6,18 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
+    <div id="overlay"></div>
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6">
-                    <h3>View Highscores</h3>
+                <div class="col-sm-3">
+                    <span><p id="highscore">View Highscores</p></span>
                 </div>
 
-                <div class="col-sm-6 d-flex justify-content-end">
-                    <h3>Time: 75</h3>
+                <div class="col-sm-6">
+
+                </div>
+                
+                <div class="col-sm-3">
+                    <span><p id="timer">Time: 75</p></span>
                 </div>
 
             </div>
@@ -26,7 +32,7 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container" id="card_container">
             <div class="row">
                 <div class="col-sm-12 d-flex justify-content-center">
                     <div class="card" style="width: 40rem;">

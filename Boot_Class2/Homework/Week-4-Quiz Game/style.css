@@ -1,0 +1,54 @@
+* {
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	/* box-sizing: border-box; */
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-image: url("images/coding_desk.jpg");
+	background-repeat: no-repeat;
+	background-color: #cccccc;
+	background-position: center;
+	background-size: cover;
+}
+
+#overlay {
+}
+
+/* ======= header content ========= */
+
+header {
+	height: 5%;
+	margin: 1%;
+}
+
+#highscore,
+#timer {
+	position: absolute;
+	font-family: 'Bebas Neue', sans-serif;
+	/* font-family: 'Roboto', sans-serif; */
+	color: #f5efef;
+	font-size: 2.5vw;
+}
+
+#highscore {
+	left: 0px;
+}
+
+#timer {
+	right: 0px;
+}
+/* ============================== */
+
+/* ======= body content ========= */
+#card_container {
+	margin: 10%;
+}
+
+.card {
+	opacity: .5;
+}
