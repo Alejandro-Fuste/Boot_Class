@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
+    <!-- Overlay for background image -->
     <div id="overlay"></div>
+
+    <!-- Header with Highscore and Timer -->
     <header>
         <div class="container-fluid">
             <div class="row">
@@ -33,82 +36,21 @@
 
     <main>
        <!-- Intro Card with Start Button -->
-       <div class="container" id="start_container">
+       <div class="container">
            <div class="row">
                <div class="col-sm-12">
                 <div class="card" style="width: 100%;">
                     <div class="card-body">
                       <h5 class="card-title">Code Quiz Challenge</h5>
+                      <hr>
                       <p class="card-text">Instructions: <br> Once the start button is clicked, the quiz will begin. You will have 75 seconds to complete the quiz. Questions that are answered incorrectly will result in the time being reduced. When questions are answered correctly, the time it took to answer question will be recorded. You're total time will be displayed at the end of the quiz.</p>
-                      <a href="#" class="btn btn-primary">Start Quiz</a>
+                      <hr>
+                      <a href="#" class="btn">Start Quiz</a>
                     </div>
                   </div>
                </div>
            </div>
        </div>
-       
-        <!-- Card with Questions -->
-        <div class="container" id="card_container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card" style="width: 100%;">
-                        <div class="card-body">
-                          <h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur dicta explicabo officia nam harum quaerat, odio culpa hic sit, cupiditate beatae nemo libero dolorum pariatur illum sapiente, placeat reiciendis quod.</h5>
-                          <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                          </ul>
-                          <p>Correct!</p> 
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- All Done Card -->
-        <div class="container" id="allDone_container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card" style="width: 100%;">
-                        <div class="card-body">
-                          <h5 class="card-title">All Done!</h5>
-                          <p class="card-text">Your score is </p>
-                          <form class="form-inline">
-                            <div class="form-group mb-2">
-                              <label for="Initials" class="sr-only">Enter Initials:</label>
-                              <input type="text" readonly class="form-control-plaintext" id="intials" value="Enter Initials: ">
-                            </div>
-                            <div class="form-group mx-sm-3 mb-2">
-                              <label for="inputPassword2" class="sr-only">Enter Initials: </label>
-                              <input type="password" class="form-control" id="inputPassword2">
-                            </div>
-                            <button type="submit" class="btn btn-primary mb-2">Submit</button>
-                          </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Highscores Card -->
-        <div class="container" id="highScores_container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card" style="width: 100%;">
-                        <div class="card-body">
-                          <h5 class="card-title">Highscores</h5>
-                          <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                          </ul>
-                          <button type="submit" class="btn btn-primary mb-2">Go Back</button><button type="submit" class="btn btn-primary mb-2">Clear Highscores</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </main>
    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
