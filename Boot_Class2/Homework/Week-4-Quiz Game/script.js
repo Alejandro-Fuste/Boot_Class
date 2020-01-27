@@ -41,10 +41,19 @@ $(document).ready(function() {
 		}, 1000);
 	}
 
+	function calcScore() {
+		var rightScore = secondsLeft;
+		var wrongScore = 75 - secondsLeft;
+
+		console.log(score);
+	}
+
 	// Event listener for Start Button
 	startBtn.on('click', function() {
 		event.preventDefault();
-		console.log('click');
+		setTime();
+
+		console.log('score');
 	});
 
 	// Event listener for viewing highscores
