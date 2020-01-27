@@ -69,8 +69,6 @@ main {
 	height: 100%;
 }
 
-/* ======= Questions Card ========= */
-
 div .card {
 	z-index: 3;
 	height: 100%;
@@ -80,6 +78,7 @@ div .card {
 
 .card-title,
 .card-text,
+h6,
 p {
 	color: #f5efef;
 	z-index: 3;
@@ -91,16 +90,22 @@ p {
 	font-family: 'Oswald', sans-serif;
 }
 
-.card a {
-	justify-content: center;
+h6 {
+	font-family: 'Arimo', sans-serif;
+	font-size: 2.0vw;
 }
 
 p {
 	font-family: 'Arimo', sans-serif;
 	font-size: 1.8vw;
+	line-height: 1.5;
 }
 
 .btn {
 	background-color: #817f9f;
 	color: white;
+}
+
+.card a {
+	justify-content: center;
 }
