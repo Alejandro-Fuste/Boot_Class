@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 	function startScreen() {
 		cardTitleEl.text('Code Quiz Challenge');
-		$('p').before(cardInstuctionsEl.detach());
+		$('.card-body p').before(cardInstuctionsEl.detach());
 		cardTextEl.text(cardInstructions);
 		$('.card-body').append(startBtn.detach());
 	}
