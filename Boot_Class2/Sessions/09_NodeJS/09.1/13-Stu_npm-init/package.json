@@ -1,0 +1,11 @@
+{
+  "name": "test_package",
+  "version": "1.0.0",
+  "description": "This is a test package to practice creating a json package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro Fuste",
+  "license": "ISC"
+}
