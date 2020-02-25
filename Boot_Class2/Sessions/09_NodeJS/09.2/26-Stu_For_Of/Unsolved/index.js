@@ -1,8 +1,12 @@
-const songs = $('#songs li').text();
+const songs = $('ul li');
+// console.log(songs);
+
 const songList = [];
 
-for (let song of songs) {
-	songs.append(song);
-}
+for (const song of songs) {
+	songList.push(song);
+	songs.addClass('class');
 
-// console.log(songList);
+	console.log(song);
+}
+console.log(songList);
