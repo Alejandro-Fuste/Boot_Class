@@ -1,0 +1,22 @@
+{
+  "name": "word_guess",
+  "version": "1.0.0",
+  "description": "Mini-project app that is a game like Hang Man",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ZepCap"
+  },
+  "author": "Alejandro Fuste",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^7.0.6",
+    "jest": "^25.1.0"
+  }
+}
