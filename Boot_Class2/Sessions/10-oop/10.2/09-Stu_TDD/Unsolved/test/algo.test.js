@@ -1,17 +1,15 @@
-const Algo = require('../algo');
+const Algo = require("../algo");
 
-describe('Algo', () => {
-	describe('reverse', () => {
-		it('should take in a string and reverse the order of the characters in the string'),
-			() => {
-				const str = 'hello';
-				const resStr = 'olleh';
+describe("Algo", () => {
+  describe("reverse", () => {
 
-				expect(str).toEqual(resStr);
-			};
-	});
+  });
 
-	describe('isPalindrome', () => {});
+  describe("isPalindrome", () => {
+   
+  });
 
-	describe('capitalize', () => {});
+  describe("capitalize", () => {
+    
+  });
 });
