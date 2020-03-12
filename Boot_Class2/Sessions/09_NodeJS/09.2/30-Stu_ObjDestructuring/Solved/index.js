@@ -32,6 +32,7 @@ console.log(brother1); // <= Rob Stark
 console.log(brother2); // <= Rickon Stark
 
 // 3. Arrays
+// Please sure to the make the alias and allegiance variables different from the variables declared in the first practice problem.
 const characters = [ 'Ned Stark', 'The Quiet Wolf', 'House Stark' ];
 
 const [ name, alias, aLlegiance ] = characters;
