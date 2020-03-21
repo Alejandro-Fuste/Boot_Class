@@ -25,7 +25,7 @@ function createProduct() {
 	var query = connection.query(
 		'INSERT INTO products SET ?',
 		{
-			flavor: 'Rocky Road',
+			flavor: 'Belgian Chocolate',
 			price: 3.0,
 			quantity: 50
 		},
@@ -47,10 +47,10 @@ function updateProduct() {
 		'UPDATE products SET ? WHERE ?',
 		[
 			{
-				quantity: 100
+				quantity: 300
 			},
 			{
-				flavor: 'Rocky Road'
+				flavor: 'Chocolate'
 			}
 		],
 		function(err, res) {
@@ -70,7 +70,7 @@ function deleteProduct() {
 	connection.query(
 		'DELETE FROM products WHERE ?',
 		{
-			flavor: 'strawberry'
+			flavor: 'vanilla'
 		},
 		function(err, res) {
 			if (err) throw err;
