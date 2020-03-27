@@ -1,5 +1,6 @@
 var mysql = require("mysql");
 
+// create the connection information for the sql database
 var connection = mysql.createConnection({
   host: "localhost",
 
@@ -11,18 +12,20 @@ var connection = mysql.createConnection({
 
   // Your password
   password: "",
-  database: "ice_creamDB"
+  database: "boston"
 });
 
 connection.connect(function(err) {
   if (err) throw err;
-  console.log("connected as id " + connection.threadId);
-  afterConnection();
+  console.log("connected as id " + connection.threadId + "\n");
+  readColleges();
 });
 
-function afterConnection() {
-  connection.query("SELECT * FROM products", function(err, res) {
+function readColleges() {
+  connection.query("SELECT name FROM colleges", function(err, res) {
     if (err) throw err;
+
+    // Log all results of the SELECT statement
     console.log(res);
     connection.end();
   });
