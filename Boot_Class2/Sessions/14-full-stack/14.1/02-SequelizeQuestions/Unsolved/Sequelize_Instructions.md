@@ -3,7 +3,7 @@
 * Spend the next few minutes with your partner answering the following questions. You should be using the Sequelize Documentation (and whatever other references you find online).
 
   ```
-  	- Answer: What is Sequelize? Sequelize is a promised-based ORM for MySQL and other database languages. 
+  	- Answer: What is Sequelize?
 
   	- Answer: What advantages does it offer?
 

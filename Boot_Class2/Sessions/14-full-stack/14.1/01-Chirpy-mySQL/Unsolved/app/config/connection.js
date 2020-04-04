@@ -3,24 +3,24 @@
 // *********************************************************************************
 
 // Require mysql
-var mysql = require('mysql');
+var mysql = require("mysql");
 
 // Set up our connection information
 var connection = mysql.createConnection({
-	host: '',
-	port: 3306,
-	user: 'root',
-	password: 'yourRootPassword',
-	database: 'chirpy'
+  host: "",
+  port: 3306,
+  user: "",
+  password: "",
+  database: ""
 });
 
 // Connect to the database
 connection.connect(function(err) {
-	if (err) {
-		console.error('error connecting: ' + err.stack);
-		return;
-	}
-	console.log('connected as id ' + connection.threadId);
+  if (err) {
+    console.error("error connecting: " + err.stack);
+    return;
+  }
+  console.log("connected as id " + connection.threadId);
 });
 
 // Export connection
