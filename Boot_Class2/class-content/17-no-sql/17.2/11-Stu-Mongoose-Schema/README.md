@@ -1,12 +1,12 @@
 # User Schema
 
-In this activity you will create a user schema with mongoose.
+In this activity you will create a user schema with Mongoose.
 
 ## Instructions
 
 * In `userModel.js` add four attributes to your schema.
 
-  * username: A string that will be be required, and also trimmed.
+  * username: A string that will be required, and trimmed.
 
   * password: A string that will be required, trimmed, and at least 6 characters.
 
