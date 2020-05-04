@@ -72,15 +72,8 @@ app.get('/populateduser', (req, res) => {
 		});
 });
 
-app.listen(PORT, () => {
-	console.log(`App running on port ${PORT}!`);
-});
+// app.listen(PORT, () => {
+// 	console.log(`App running on port ${PORT}!`);
+// });
 
-Model.deleteOne(
-	{
-		field: 'filter'
-	},
-	(err) => {
-		console.log(`Error: ` + err);
-	}
-);
+app.listen(PORT, () => console.log(`App running on http://localhost:%s/`, PORT));

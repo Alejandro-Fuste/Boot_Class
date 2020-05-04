@@ -13,4 +13,38 @@
 <script>
 
 // CODE HERE
+
+const request = indexedDB.open("firstIndexedDB", 1);
+
+request.onupgradeneeded = event => {
+  const db = event.target.result;
+
+  const toDoListStore = db.createObjectStore("toDoList", {keyPath: "listID"});
+
+  toDoListStore.createIndex('dueDateIndex', 'dueDate');
+}
+
+request.onsuccess = () => {
+  const db = request.result;
+  const transaction = db.transaction(['toDoList'], 'readwrite');
+  const toDoListStore = transaction.objectStore('toDoList');
+  const dueDateIndex = toDoListStore.index('dueDateIndex');
+
+  toDoListStore.add({ listID: "1", dueDate: "complete" });
+  toDoListStore.add({ listID: "2", dueDate: "in-progress" });
+  toDoListStore.add({ listID: "3", dueDate: "complete" });
+  toDoListStore.add({ listID: "4", dueDate: "backlog" });
+
+  const getRequest = toDoListStore.get('1');
+  getRequest.onsuccess = (event) => {
+          console.log(getRequest.result); 
+        }; 
+
+  const getRequestIdx = dueDateIndex.getAll("complete");
+  getRequestIdx.onsuccess = (event) => {
+    console.log(getRequestIdx.result); 
+  }; 
+}
+
+request.onsuccess = event => console.log(request.result);
 </script>

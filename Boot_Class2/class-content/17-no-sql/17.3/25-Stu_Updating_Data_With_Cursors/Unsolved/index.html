@@ -40,6 +40,18 @@
         const getCursorRequest = toDoListStore.openCursor();
         getCursorRequest.onsuccess = e => {
           // CODE HERE
+          const cursor = e.target.result;
+          
+          if (cursor) {
+            console.log(cursor.value.status);
+            if (cursor.value.status === 'in-progress'){
+              const todo = cursor.value;
+              todo.status = 'complete';
+              cursor.update(todo);
+            }
+            cursor.continue();
+          } 
+          
         };
       };
     </script>
